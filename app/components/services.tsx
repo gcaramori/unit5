@@ -20,7 +20,7 @@ export default function Services() {
             className="flex flex-col justify-start items-start gap-10 list-disc text-white px-4 md:px-0 mb-20 lg:mb-0"
           >
             <li className="text-3xl md:text-4xl block text-left font-bold text-white drop-shadow-md">
-              Classes for everybody
+              Classes for everyone
             </li>
             <li className="text-3xl md:text-4xl block text-left font-bold text-white drop-shadow-md">
               Personalized Training
