@@ -29,6 +29,7 @@ export default function Testimonials() {
               },
               968: {
                 slidesPerView: 3,
+                spaceBetween: 50,
               },
             }}
           >
