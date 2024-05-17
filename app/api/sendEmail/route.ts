@@ -9,7 +9,7 @@ interface EmailMessage {
 }
 
 export async function POST(request: Request) {
-  const req = await request.json()
+  const data = await request.json()
 
   const transporter: Transporter = nodemailer.createTransport({
     host: 'sandbox.smtp.mailtrap.io',
@@ -22,10 +22,13 @@ export async function POST(request: Request) {
   })
 
   const message: EmailMessage = {
-    from: req.email,
+    from: data.email,
     to: 'gcaramori16@gmail.com',
-    subject: 'Test email',
-    text: 'This is a test email sent from Nodemailer',
+    subject: 'New prospected customer!',
+    text: `
+      Hi, my name is ${data.name} and i'm interested to get a membership in your gym!
+      My phone is: ${data.phone}
+    `,
   }
 
   try {

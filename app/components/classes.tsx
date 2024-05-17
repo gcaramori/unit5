@@ -51,7 +51,7 @@ export default function Classes() {
               />
 
               <h3 className="block text-center text-xl lg:text-2xl drop-shadow-md text-white">
-                Mens weight only classes
+                Men&apos;s weight only classes
               </h3>
             </div>
 
