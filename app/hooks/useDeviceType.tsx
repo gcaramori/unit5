@@ -12,9 +12,11 @@ const useDeviceType = () => {
       else setDeviceType('desktop')
     }
 
-    window.onresize = getDimensions
+    if (typeof window !== 'undefined') {
+      window.onresize = getDimensions
 
-    getDimensions()
+      getDimensions()
+    }
   }, [])
 
   return deviceType

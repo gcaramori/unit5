@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react'
 
 const useHash = () => {
-  const [hash, setHash] = useState<string>(window.location.hash)
+  const [hash, setHash] = useState<string>('')
 
   useEffect(() => {
     const handleHashChange = () => {
       setHash(window.location.hash)
     }
 
-    window.addEventListener('hashchange', handleHashChange)
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange)
+    if (typeof window !== 'undefined') {
+      window.addEventListener('hashchange', handleHashChange)
+      return () => {
+        window.removeEventListener('hashchange', handleHashChange)
+      }
     }
   }, [])
 
