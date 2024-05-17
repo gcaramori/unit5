@@ -15,8 +15,8 @@ export default function Panel() {
           </h2>
 
           <p className="block relative text-xl text-gray-300 opacity-80 drop-shadow-md font-semibold text-center md:text-left max-w-xl">
-            7+ years helping people build and develop strength, motor skills and
-            coordination.
+            10+ years helping people build and develop strength, motor skills
+            and coordination.
           </p>
         </ComponentTransition>
       </div>
