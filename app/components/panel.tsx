@@ -3,8 +3,8 @@ import ComponentTransition from './componentTransition'
 
 export default function Panel() {
   return (
-    <div className="w-full h-screen bg-panel bg-no-repeat bg-top bg-cover block py-44 md:py-28 px-6 md:px-20 lg:px-32 2xl:px-44 2xl:py-48">
-      <div className="block relative mb-18 md:mb-14 2xl:mb-16">
+    <div className="w-full h-screen bg-panel bg-no-repeat bg-top bg-cover block py-32 md:py-28 px-6 md:px-20 lg:px-32 2xl:px-44 2xl:py-48">
+      <div className="block relative mb-16 md:mb-14 2xl:mb-16">
         <ComponentTransition>
           <h2 className="block relative text-5xl lg:text-8xl text-white font-bold drop-shadow-lg text-center md:text-left mb-4">
             Transforming <span className="text-yellow-500">Bodies</span>
