@@ -6,10 +6,12 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import ComponentTransition from './componentTransition'
-import useGalleryImages from '../hooks/useGalleryImages'
+import useGalleryMedia from '../hooks/useGalleryMedia'
 
 export default function Gallery() {
-  const images = useGalleryImages()
+  const media = useGalleryMedia()
+
+  console.log(media)
 
   return (
     <section
@@ -23,23 +25,35 @@ export default function Gallery() {
 
         <div className="block relative mt-20 w-full">
           <Swiper modules={[Navigation]} navigation spaceBetween={30}>
-            {images?.map((image, index) => {
-              return (
-                image !== '' && (
-                  <SwiperSlide key={index}>
-                    <div className="flex justify-center items-center h-[400px] md:h-[500px] lg:h-[700px] overflow-hidden rounded-lg">
-                      <Image
-                        src={image}
-                        alt={`${index}_image_gallery`}
-                        width={600}
-                        height={600}
-                        style={{ objectFit: 'contain' }}
-                      />
-                    </div>
-                  </SwiperSlide>
-                )
-              )
-            })}
+            {media?.map((file, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex justify-center items-center h-[400px] md:h-[500px] lg:h-[700px] overflow-hidden rounded-lg">
+                  {file.type === 'image' ? (
+                    <Image
+                      src={file.src}
+                      alt={`${index}_image_gallery`}
+                      width={600}
+                      height={600}
+                      style={{ objectFit: 'contain' }}
+                    />
+                  ) : (
+                    <video
+                      width="600"
+                      height="600"
+                      controls
+                      preload="none"
+                      autoPlay
+                      loop
+                      playsInline
+                      muted
+                    >
+                      <source src={file.src} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  )}
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </ComponentTransition>

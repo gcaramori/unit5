@@ -10,7 +10,7 @@ export default function ComponentTransition({
   return (
     <motion.div
       initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.2, type: 'ease-in-out' }}
       className="w-full block relative"
     >

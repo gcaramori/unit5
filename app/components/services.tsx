@@ -26,9 +26,6 @@ export default function Services() {
               Personalized Training
             </li>
             <li className="text-3xl md:text-4xl block text-left font-bold text-white drop-shadow-md">
-              Recovery Room
-            </li>
-            <li className="text-3xl md:text-4xl block text-left font-bold text-white drop-shadow-md">
               Qualified Staff
             </li>
             <li className="text-3xl md:text-4xl block text-left font-bold text-white drop-shadow-md">
