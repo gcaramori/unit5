@@ -40,10 +40,10 @@ export default function Navbar() {
                 <a href="#">Home</a>
               </li>
               <li
-                data-active={hash === '#classes'}
+                data-active={hash === '#packages'}
                 className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
               >
-                <a href="#classes">Classes</a>
+                <a href="#packages">Packages</a>
               </li>
               <li
                 data-active={hash === '#services'}
