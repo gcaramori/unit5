@@ -16,7 +16,7 @@ export default function Classes() {
 
       <div className="flex justify-center items-center relative mt-32 w-full">
         <ComponentTransition>
-          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 grid-rows-3 md:grid-rows-2 place-items-center items-start gap-10 md:gap-24 xl:gap-44">
+          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 grid-rows-3 md:grid-rows-2 place-items-center items-start gap-10 md:gap-24 xl:gap-20">
             <div className="flex flex-col justify-center items-center gap-6">
               <Image
                 width="100"
@@ -86,14 +86,14 @@ export default function Classes() {
               />
 
               <h2 className="block text-center text-3xl font-bold drop-shadow-md text-white">
-                Men&apos;s weight only classes
+                Men&apos;s and woman&apos;s weight classes
               </h2>
 
               <div>
                 <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
-                  Our mens 12 week progressive weight lifting program training
-                  is 3 days per week: tuesday 7pm, thursday 7pm and friday 7pm.
-                  Our program is geared towards people looking to gain massive
+                  Its a 12 week progressive weight lifting program training is 3
+                  days per week: tuesday 7pm, thursday 7pm and friday 7pm. Our
+                  program is geared towards people looking to gain massive
                   strength and put on some muscle in the process.
                 </p>
               </div>
@@ -108,15 +108,33 @@ export default function Classes() {
               />
 
               <h2 className="block text-center text-3xl font-bold drop-shadow-md text-white">
-                Mixed conditioning classes
+                Metcon classes
               </h2>
 
               <div>
                 <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
-                  Our mens 12 week progressive weight lifting program training
-                  is 3 days per week: tuesday 7pm, thursday 7pm and friday 7pm.
-                  Our program is geared towards people looking to gain massive
-                  strength and put on some muscle in the process.
+                  Our classes are combination of strength and conditioning
+                  workouts, which is an effective way to burn calories and torch
+                  body fat without losing muscle mass. Metcon club what
+                  we&apos;re about is Engine Building, igniting your FatLoss
+                  efforts and getting fitter!! Research has shown that MetCon
+                  and HIIT style workouts result in less muscle loss when
+                  compared to longer LIT (low intensity training) training
+                  sessions that burn similar calories. Metcons are
+                  beginner-friendly and beneficial to those who their way around
+                  the gym.
+                </p>
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                  Get Leaner / Fitter / Stronger ✅️
+                </p>
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                  Small Class Setting ✅️
+                </p>
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                  Supportive Group Environment ✅️
+                </p>
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                  3 Classes a week for 4 weeks ✅️
                 </p>
               </div>
             </div>
@@ -125,17 +143,16 @@ export default function Classes() {
               <Image width="100" height="100" src="/online.png" alt="online" />
 
               <h2 className="block text-center text-3xl font-bold drop-shadow-md text-white">
-                Online classes
+                Online coaching
               </h2>
 
               <div>
                 <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
-                  Join our team with our online experience for just €100 per
-                  month. Our very own Accountability app managed and monitored
-                  by myself to keep you on the road to your goals. Check ins
-                  every 2 weeks, sync your devices/nutriton apps such as Watch
-                  and My Fitness Pal to our online app to get the most out of
-                  your training.
+                  Join our team with our online experience. Our very own
+                  Accountability app managed and monitored by myself to keep you
+                  on the road to your goals. Check ins every 2 weeks, sync your
+                  devices/nutriton apps such as Watch and My Fitness Pal to our
+                  online app to get the most out of your training.
                 </p>
               </div>
             </div>
