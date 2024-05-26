@@ -69,8 +69,10 @@ export default function Contact() {
                 <iframe
                   width="100%"
                   height="500px"
-                  src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=Unit%205B,%20Motorcity%20Kylemore%20Road+(Unit5%20-%20Strength%20and%20Fitness)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                ></iframe>
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Inchicore,%20Dublin%208,%20D12%20C5PE,%20Irlanda+(Unit%205%20-%20Strength%20and%20Fitness)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                >
+                  <a href="https://www.gps.ie/">gps tracker sport</a>
+                </iframe>
               </div>
             </div>
 

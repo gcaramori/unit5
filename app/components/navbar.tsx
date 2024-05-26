@@ -5,7 +5,6 @@ import Image from 'next/image'
 import useHash from '../hooks/useHash'
 import useScrollPosition from '../hooks/useScrollPosition'
 import useDeviceType from '../hooks/useDeviceType'
-import ComponentTransition from './componentTransition'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoMdClose } from 'react-icons/io'
 
@@ -13,6 +12,8 @@ export default function Navbar() {
   const hash = useHash()
   const scrollPosition = useScrollPosition()
   const deviceType = useDeviceType()
+
+  console.log(scrollPosition)
 
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false)
 
@@ -22,60 +23,58 @@ export default function Navbar() {
 
   return (
     <>
-      <ComponentTransition>
-        <nav
-          data-fixed={scrollPosition > 50}
-          className="relative data-[fixed=true]:fixed data-[fixed=true]:bg-black top-0 flex justify-between items-center w-full py-0 md:py-4 px-8 md:px-14 z-30 bg-transparent transition-all"
-        >
-          <div className="block relative">
-            <Image src="/logo.png" alt="Logo" height={70} width={70} priority />
-          </div>
+      <nav
+        data-fixed={scrollPosition > 50}
+        className="relative data-[fixed=true]:fixed data-[fixed=true]:bg-black top-0 flex justify-between items-center w-full py-0 md:py-4 px-8 md:px-14 z-30 bg-transparent transition-all"
+      >
+        <div className="block relative">
+          <Image src="/logo.png" alt="Logo" height={70} width={70} priority />
+        </div>
 
-          {deviceType !== 'mobile' ? (
-            <ul className="flex justify-center items-center gap-8 list-none text-white font-semibold text-lg drop-shadow-sm">
-              <li
-                data-active={!hash || hash === '#'}
-                className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
-              >
-                <a href="#">Home</a>
-              </li>
-              <li
-                data-active={hash === '#packages'}
-                className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
-              >
-                <a href="#packages">Packages</a>
-              </li>
-              <li
-                data-active={hash === '#services'}
-                className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
-              >
-                <a href="#services">Services</a>
-              </li>
-              <li
-                data-active={hash === '#testimonials'}
-                className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
-              >
-                <a href="#testimonials">Testimonials</a>
-              </li>
-              <li
-                data-active={hash === '#contact'}
-                className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
-              >
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          ) : (
-            <div className="relative block">
-              <button
-                className="inline-block p-4 text-white drop-shadow-md z-40"
-                onClick={handleOpenNavbar}
-              >
-                <GiHamburgerMenu size="1.5em" />
-              </button>
-            </div>
-          )}
-        </nav>
-      </ComponentTransition>
+        {deviceType !== 'mobile' ? (
+          <ul className="flex justify-center items-center gap-8 list-none text-white font-semibold text-lg drop-shadow-sm">
+            <li
+              data-active={!hash || hash === '#'}
+              className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              data-active={hash === '#packages'}
+              className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
+            >
+              <a href="#packages">Packages</a>
+            </li>
+            <li
+              data-active={hash === '#services'}
+              className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
+            >
+              <a href="#services">Services</a>
+            </li>
+            <li
+              data-active={hash === '#testimonials'}
+              className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
+            >
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li
+              data-active={hash === '#contact'}
+              className="transition-all hover:opacity-80 py-3 data-[active=true]:border-b-4 data-[active=true]:border-yellow-600"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        ) : (
+          <div className="relative block">
+            <button
+              className="inline-block p-4 text-white drop-shadow-md z-40"
+              onClick={handleOpenNavbar}
+            >
+              <GiHamburgerMenu size="1.5em" />
+            </button>
+          </div>
+        )}
+      </nav>
 
       <div
         data-open={isNavbarOpen}
