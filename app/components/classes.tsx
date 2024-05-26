@@ -30,7 +30,7 @@ export default function Classes() {
               </h2>
 
               <div>
-                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-justify 2xl:text-center mb-2">
                   Work closely with a highly qualified coach with our one to one
                   Personal Training Package:
                 </p>
@@ -65,7 +65,7 @@ export default function Classes() {
               </h2>
 
               <div>
-                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-justify 2xl:text-center mb-2">
                   Join a Group of like minded individuals for in house training
                   sessions with a coach, get personal trained for a fraction of
                   the cost, check ins every 2 weeks to ensure progress. Have a
@@ -90,7 +90,7 @@ export default function Classes() {
               </h2>
 
               <div>
-                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-justify 2xl:text-center mb-2">
                   Its a 12 week progressive weight lifting program training is 3
                   days per week: tuesday 7pm, thursday 7pm and friday 7pm. Our
                   program is geared towards people looking to gain massive
@@ -112,7 +112,7 @@ export default function Classes() {
               </h2>
 
               <div>
-                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-justify 2xl:text-center mb-2">
                   Our classes are combination of strength and conditioning
                   workouts, which is an effective way to burn calories and torch
                   body fat without losing muscle mass. Metcon club what
@@ -147,7 +147,7 @@ export default function Classes() {
               </h2>
 
               <div>
-                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-justify 2xl:text-center mb-2">
                   Join our team with our online experience. Our very own
                   Accountability app managed and monitored by myself to keep you
                   on the road to your goals. Check ins every 2 weeks, sync your
@@ -170,7 +170,7 @@ export default function Classes() {
               </h2>
 
               <div>
-                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-center mb-2">
+                <p className="block text-md lg:text-lg drop-shadow-sm text-white text-justify 2xl:text-center mb-2">
                   This year we celebrate our 7th year of our inclusion program.
                   7 years ago we set up classes for adults with additional needs
                   and disabilities, from zoom classes, in house training to on
