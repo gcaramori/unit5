@@ -42,7 +42,7 @@ export default function Services() {
 
         <ComponentTransition>
           <div className="block relative my-auto overflow-hidden rounded-lg">
-            <Image src="/services.jpg" alt="gym" width={600} height={600} />
+            <Image src="/services.jpeg" alt="gym" width={600} height={600} />
           </div>
         </ComponentTransition>
       </div>
