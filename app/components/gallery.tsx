@@ -11,8 +11,6 @@ import useGalleryMedia from '../hooks/useGalleryMedia'
 export default function Gallery() {
   const media = useGalleryMedia()
 
-  console.log(media)
-
   return (
     <section
       id="gallery"

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-ses": "^3.583.0",
     "framer-motion": "^11.1.9",
     "next": "14.2.3",
     "nodemailer": "^6.9.13",

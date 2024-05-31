@@ -13,8 +13,6 @@ export default function Navbar() {
   const scrollPosition = useScrollPosition()
   const deviceType = useDeviceType()
 
-  console.log(scrollPosition)
-
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false)
 
   const handleOpenNavbar = useCallback(() => {
