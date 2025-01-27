@@ -59,7 +59,7 @@ export default function Footer() {
 
           <div className="flex justify-start items-center gap-2">
             <Link
-              href="https://www.instagram.com/mick_byrne_unit5/"
+              href="https://www.instagram.com/unit5_strengthandfitness"
               target="_blank"
               rel="noreferrer"
               title="Instagram"
